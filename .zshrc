@@ -21,6 +21,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+eval "$(starship init zsh)"
+
 # ==============================================================================
 # Custom Functions
 # ==============================================================================
@@ -29,6 +31,10 @@ compinit
 cd() {
   builtin cd "$@" && ls
 }
+
+# Load local secrets
+[[ -f "$HOME/.config/secrets/env" ]] &&
+    source "$HOME/.config/secrets/env"
 
 # alias general
 alias on-turbo="echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo"
