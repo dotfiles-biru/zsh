@@ -32,7 +32,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Automatically list directory contents upon changing directories
 cd() {
-  builtin cd "$@" && ls
+  builtin cd "$@" && eza
 }
 
 # Load local secrets
