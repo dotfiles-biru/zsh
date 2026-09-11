@@ -47,6 +47,7 @@ alias undervolt-1150="echo 1150 | sudo tee /sys/class/drm/card1/gt/gt0/rps_max_f
 alias undervolt-900="echo 900 | sudo tee /sys/class/drm/card1/gt/gt0/rps_max_freq_mhz"
 
 alias zshrc="nvim ~/dotfiles-biru/zsh/.zshrc && source ~/dotfiles-biru/zsh/.zshrc"
+alias ginit="git init && git add . && git commit -am 'init: Initialize project'"
 
 alias b='bat'
 
