@@ -32,6 +32,9 @@ export PATH='/home/biru/.hunk/bin':"$PATH"
 
 export PATH="/home/biru/.local/share/fnm/node-versions/v24.21.0/installation/bin:$PATH"
 
+# opencode
+export PATH=/home/biru/.opencode/bin:$PATH
+
 # ==============================================================================
 # Custom Functions
 # ==============================================================================
