@@ -30,6 +30,8 @@ export PATH="$HOME/.local/bin:$PATH"
 # Added by the Hunk installer (https://hunk.dev)
 export PATH='/home/biru/.hunk/bin':"$PATH"
 
+export PATH="/home/biru/.local/share/fnm/node-versions/v24.21.0/installation/bin:$PATH"
+
 # ==============================================================================
 # Custom Functions
 # ==============================================================================
@@ -52,6 +54,8 @@ alias undervolt-900="echo 900 | sudo tee /sys/class/drm/card1/gt/gt0/rps_max_fre
 alias zshrc="nvim ~/dotfiles-biru/zsh/.zshrc && source ~/dotfiles-biru/zsh/.zshrc"
 alias ginit="git init && git add . && git commit -am 'init: Initialize project'"
 alias ff="fastfetch"
+
+alias cddfb="cd ~/dotfiles-biru"
 
 alias b='bat'
 
@@ -150,4 +154,4 @@ alias treel='eza --tree -l'
 alias lg='eza -l --git'
 alias lga='eza -la --git'
 
-fastfetch 
+fastfetch
