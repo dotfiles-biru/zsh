@@ -44,6 +44,8 @@ alias undervolt-900="echo 900 | sudo tee /sys/class/drm/card1/gt/gt0/rps_max_fre
 
 alias zshrc="nvim ~/dotfiles-biru/zsh/.zshrc && source ~/dotfiles-biru/zsh/.zshrc"
 
+alias b='bat'
+
 # ============================================= 
 # eza
 # =============================================
@@ -92,6 +94,7 @@ xx=38;2;88;100;120:\
 hd=38;2;220;228;240;1"
 
 # basic
+alias ls='eza'
 alias l='eza'
 alias ll='eza -lah'
 alias la='eza -a'
