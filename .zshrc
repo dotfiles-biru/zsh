@@ -27,6 +27,9 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 
 export PATH="$HOME/.local/bin:$PATH"
 
+# Added by the Hunk installer (https://hunk.dev)
+export PATH='/home/biru/.hunk/bin':"$PATH"
+
 # ==============================================================================
 # Custom Functions
 # ==============================================================================
@@ -48,6 +51,7 @@ alias undervolt-900="echo 900 | sudo tee /sys/class/drm/card1/gt/gt0/rps_max_fre
 
 alias zshrc="nvim ~/dotfiles-biru/zsh/.zshrc && source ~/dotfiles-biru/zsh/.zshrc"
 alias ginit="git init && git add . && git commit -am 'init: Initialize project'"
+alias ff="fastfetch"
 
 alias b='bat'
 
