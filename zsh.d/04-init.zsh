@@ -2,6 +2,10 @@ zstyle :compinstall filename '/home/biru/.zshrc'
 autoload -Uz compinit
 compinit
 
+# Initialize Antidote
+source ~/dotfiles-biru/zsh/antidote/antidote.zsh
+antidote load ~/dotfiles-biru/zsh/plugins.txt
+
 # FZF: Lazy load
 _fzf_init() {
   source <(fzf --zsh)

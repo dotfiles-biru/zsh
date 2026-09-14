@@ -1,15 +1,14 @@
 #!/usr/bin/env bash
-# ~/dotfiles-biru/install.sh
 
-# Get absolute path of script
-DOTFILES_ZSH_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Symlink setup
+ln -sf ~/dotfiles-biru/zsh/.zshrc ~/.zshrc
+ln -sf ~/dotfiles-biru/zsh/zsh.d ~/.zsh.d
+ln -sf ~/dotfiles-biru/zsh/zsh.local/.zsh.local ~/.zsh.local
 
-echo "Linking dotfiles..."
-ln -sf "$DOTFILES_ZSH_DIR/.zshrc" ~/.zshrc
-ln -sf "$DOTFILES_ZSH_DIR/zsh.d" ~/.zsh.d
-ln -sf "$DOTFILES_ZSH_DIR/zsh.local" ~/.zsh.local
+# Compile bytecode
+zcompile ~/dotfiles-biru/zsh/zsh.d/*.zsh
 
-echo "Compiling zsh configs..."
-zsh -c "zcompile $DOTFILES_ZSH_DIR/zsh.d/*.zsh"
-
-echo "Done! Restart shell."
+# Ensure antidote exists
+if [ ! -d "$HOME/dotfiles-biru/zsh/antidote" ]; then
+    git clone --depth=1 https://github.com/mattmc3/antidote.git "$HOME/dotfiles-biru/zsh/antidote"
+fi

@@ -2,3 +2,4 @@ zsh.local/*
 !zsh.local/.gitkeep
 !zsh.local/.zsh.local.example
 *.zwc
+antidote
