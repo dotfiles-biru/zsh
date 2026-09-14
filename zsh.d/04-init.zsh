@@ -3,8 +3,8 @@ autoload -Uz compinit
 compinit
 
 # Initialize Antidote
-source ~/dotfiles-biru/zsh/antidote/antidote.zsh
-antidote load ~/dotfiles-biru/zsh/plugins.txt
+source "$HOME/dotfiles-biru/zsh/antidote/antidote.zsh"
+antidote load "$HOME/dotfiles-biru/zsh/plugins.txt"
 
 # FZF: Lazy load
 _fzf_init() {

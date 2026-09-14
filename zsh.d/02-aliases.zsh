@@ -1,10 +1,10 @@
 # alias general
 # Use environment variable to avoid hardcoding path in aliases
-alias zshrc="nvim $HOME/dotfiles-biru/zsh/.zshrc && zsh -c 'zcompile $HOME/dotfiles-biru/zsh/zsh.d/*.zsh' && source $HOME/.zshrc"
+alias zshrc='nvim $HOME/dotfiles-biru/zsh/zsh.d/ && zsh -n $HOME/.zshrc && zcompile "$HOME/dotfiles-biru/zsh/zsh.d/"*.zsh && source $HOME/.zshrc && echo "Config reloaded & compiled!"'
 alias ginit="git init && git add . && git commit -am 'init: Initialize project'"
 alias ff="fastfetch"
 
-alias cddfb="cd ~/dotfiles-biru"
+alias cddfb="cd $HOME/dotfiles-biru"
 
 alias c='cat'
 alias b='bat'
