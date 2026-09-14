@@ -1,0 +1,9 @@
+# Copy this file to .zsh.local and fill in your secrets/machine-specific settings
+# This is an example file for tracking purposes.
+
+# 1. Machine-specific secrets (e.g., API keys, tokens)
+# [[ -f "$HOME/.config/secrets/env" ]] && source "$HOME/.config/secrets/env"
+
+# 2. Hardware-specific aliases (e.g., fan control, undervolting)
+# alias on-turbo="echo 0 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo"
+# alias off-turbo="echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo"
