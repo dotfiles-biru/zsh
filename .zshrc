@@ -60,7 +60,12 @@ alias ff="fastfetch"
 
 alias cddfb="cd ~/dotfiles-biru"
 
+alias c='cat'
 alias b='bat'
+alias lg='lazygit'
+alias oc='opencode'
+alias nv='nvim'
+
 
 # ============================================= 
 # fzf
@@ -133,7 +138,7 @@ xx=38;2;88;100;120:\
 hd=38;2;220;228;240;1"
 
 # basic
-alias ls='eza'
+#alias ls='eza'
 alias l='eza'
 alias ll='eza -lah'
 alias la='eza -a'
