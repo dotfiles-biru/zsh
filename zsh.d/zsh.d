@@ -1,0 +1,1 @@
+/home/biru/dotfiles-biru/zsh/zsh.d

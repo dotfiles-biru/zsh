@@ -1,5 +1,6 @@
 # alias general
-alias zshrc="nvim ~/dotfiles-biru/zsh/.zshrc && source ~/dotfiles-biru/zsh/.zshrc"
+# Use environment variable to avoid hardcoding path in aliases
+alias zshrc="nvim $HOME/dotfiles-biru/zsh/.zshrc && zsh -c 'zcompile $HOME/dotfiles-biru/zsh/zsh.d/*.zsh' && source $HOME/.zshrc"
 alias ginit="git init && git add . && git commit -am 'init: Initialize project'"
 alias ff="fastfetch"
 
